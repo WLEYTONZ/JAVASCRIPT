@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>CREACION-CAPTURA-LECTURA ARRAYS</h1>
+        <h2>CICLO FOR</h2>
+        <p>LOS DATOS ALMACENADOS EN EL ARRAYS SON:</p>
+        <br>
+        <script>
+            //Creacion de arrays
+            let datos=new Array(); //creacion array
+            let num; //longitud ingresada x usuario
+            //CAPTURA ARRAYS
+            num=parseInt(prompt("INGRESE CANTIDAD (LONGITUD) DE DATOS A GUARDAR..."));
+            for (i=0;i<num;i++){
+                datos[i]=prompt("INGRESE DATOS AL ARRAY.."+i);
+            }
+            //LECTURA
+            for (i=0;i<num;i++){
+                document.write(i+"..."+datos[i]+"<br>");
+                console.log(datos[i]);
+            }
+        </script>
+    </center>
+</body>
+</html>
